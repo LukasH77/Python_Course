@@ -3,3 +3,10 @@ def main():
 
 
 main()
+
+
+def fun():
+    print("Order?")
+
+
+fun()
