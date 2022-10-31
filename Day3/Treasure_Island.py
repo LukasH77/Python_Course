@@ -24,7 +24,7 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to treasure Island.\nCan you survive to find the treasure?")
 print("You arrive at the beach, the sun overhead and head into the jungle along a faint trail. "
       "After a short hike you arrive at a T-junction.")
-choice1 = input("Do you go left or right? ").lower()
+choice1 = input("Do you go left or right?\n").lower()
 
 if choice1 == "left":
     print("You delve further into the jungle, following a light trail in the underbrush.\n"
@@ -34,7 +34,7 @@ if choice1 == "left":
           "The opposite shore is not too far away..you could try swimming across.\n"
           "You could also try to go around the lake, a long trek along a shore mostly covered in"
           " a dense mix of thorny vines and buzzing insects.")
-    choice2 = input("Do you swim or walk? ").lower()
+    choice2 = input("Do you swim or walk?\n").lower()
     if choice2 == "swim":
         print("You undress and wade into the water, slowly starting to swim, desperately trying to minimize "
               "the amount of water soaking into your bundled up clothes.\nAs you cross the halfway point you notice a "
@@ -53,7 +53,7 @@ if choice1 == "left":
               "and sleep through the last hours of darkness.\nAs you awake you feel terrible..but alive. "
               "You enter the cave, determined to finish what you started.\n"
               "After following the looping paths of the mysterious cave you arrive at three unmarked doors.")
-        choice3 = input("Which door do you open? Right, left or center. ").lower()
+        choice3 = input("Which door do you open? Right, left or center.\n").lower()
         if choice3 == "right":
             print("You open the door and are greeted by the miraculous glitter of a mountain of treasure.\n"
                   "Chests overflowing with heavenly jewels and glittering coins support an avalanche of "
