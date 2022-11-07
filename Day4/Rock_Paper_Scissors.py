@@ -37,7 +37,7 @@ while True:
         break
 
     print(moves[choice])
-    print("Computer chose:")
+    print(f"Computer chose {ai_move}:")
     print(moves[ai_move])
     if ai_move == choice:
         print("It's a draw!")
