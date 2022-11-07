@@ -37,7 +37,7 @@ while True:
 
     if choice == 3:
         break
-    if choice > 3:
+    if choice > 3 or choice < 0:
         print("Invalid input!")
         continue
 
