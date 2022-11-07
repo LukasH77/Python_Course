@@ -26,15 +26,20 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+
+print("This is a Rock Paper Scissors game!")
 while True:
     moves = [rock, paper, scissors]
     ai_move = random.randint(0, 2)
 
-    choice = int(input("This is a Rock Paper Scissors game! "
-                       "What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors. "
+    choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors. "
                        "Type 3 to exit the game.\n"))
+
     if choice == 3:
         break
+    if choice > 3:
+        print("Invalid input!")
+        continue
 
     print(moves[choice])
     print(f"Computer chose {ai_move}:")
