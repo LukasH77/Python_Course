@@ -35,11 +35,11 @@ while True:
     choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors. "
                        "Type 3 to exit the game.\n"))
 
-    if choice == 3:
-        break
     if choice > 3 or choice < 0:
         print("Invalid input!")
         continue
+    if choice == 3:
+        break
 
     print(moves[choice])
     print(f"Computer chose {ai_move}:")
