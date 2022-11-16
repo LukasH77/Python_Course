@@ -1,4 +1,7 @@
-#solution to https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json
+#
+# solution to
+# https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json
+#
 # def turn_right():
 #     turn_left()
 #     turn_left()
@@ -29,3 +32,7 @@
 #         not_right()
 #
 #     steps += 1
+#
+# 'official' solution is way prettier. Just makes sure he's got a wall right to him at the beginning.
+# I basically check every four steps if he's gone in a circle. Works too but a bit slower and more difficult to read.
+#
