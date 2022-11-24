@@ -1,7 +1,6 @@
 from random_word import RandomWords
 import hangman_art
 
-
 r = RandomWords()
 
 print(hangman_art.logo)
@@ -19,22 +18,19 @@ while playing:
     while game_running:
         guess = input("Guess a letter!\n").lower()
 
+        # keep track of guessed letters
         if guess not in guesses:
             guesses += guess
         else:
             print("You have already guessed that letter.")
             continue
+
         contained = False
         for i in range(len(choice)):
             if choice[i] == guess:
                 contained = True
-                # check if letter was already guessed
-                if display[i] != guess:
-                    display[i] = guess
-                    hits += 1
-                # if letter was already guessed there is no need to iterate over the rest of the word
-                else:
-                    break
+                display[i] = guess
+                hits += 1
 
         if not contained:
             print("Wrong, the word does not contain this letter.")
@@ -42,8 +38,8 @@ while playing:
         else:
             print("Good job! The word contains your letter.")
 
-        print(" ".join(display))
         print(hangman_art.stages[lives])
+        print(" ".join(display))
         print(f"You have {lives} lives left.")
 
         if hits >= len(choice):
