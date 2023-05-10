@@ -2,6 +2,7 @@ from calculator_art import logo
 
 operators = ['+', '-', '*', '/']
 
+
 def operate(op, a, b):
     match op:
         case 0:
